@@ -1,0 +1,3 @@
+[submodule "external_dependencies/matlab-tools"]
+	path = external_dependencies/matlab-tools
+	url = https://github.com/Fabian-Geyer/matlab-tools.git
