@@ -56,8 +56,8 @@ f = mlt.transform.system.xbar_to_x(fbar, xbar, x, xbar_star1, S);
 %% Define SOS problem
 
 % unknown polynomial decision variables
-p = casos.PS.sym('p', monomials(x, 0:4)); % equality constraint 
-V = casos.PS.sym('v', monomials(x, 1:1), 'gram'); % Lyap. candidate
+p = casos.PS.sym('p', monomials(x, 0:6)); % equality constraint 
+V = casos.PS.sym('v', monomials(x, 1:2), 'gram'); % Lyap. candidate
 sos.x = [p;V];
 opts.Kx.lin = numel(p); % p is decision variable
 opts.Kx.sos = numel(V); % V is SOS
@@ -78,7 +78,7 @@ sos.g = [
 opts.Kc.sos = size(sos.g,1);
 
 % Minimize Lyapunov coefficients (heuristic numerical improvement)
-sos.f = dot(V,V);
+sos.f = 0;
 
 % Turn off newton simplification
 opts.newton_solver = [];
