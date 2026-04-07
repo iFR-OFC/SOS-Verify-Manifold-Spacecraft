@@ -129,10 +129,10 @@ clf;
 hold on;
 mlt.plot(t, y(1:3,:), LineStyle='--', LineWidth=.8);
 mlt.plot(t, rad2deg(y(4:6,:)), LineWidth=.8);
-mlt.plot(t, Vbar_val, 'k',LineWidth=1)
+mlt.plot(t, Vbar_val./max(Vbar_val), 'k',LineWidth=1)
 legend('$\bar{x}_1$','$\bar{x}_2$','$\bar{x}_3$', ...
     '$\bar{x}_4  \,[^{\circ}/s]$','$\bar{x}_5  \,[^{\circ}/s]$', ...
-    '$\bar{x}_6  \,[^{\circ}/s]$', '$\bar{V}(\bar{x})$')
+    '$\bar{x}_6  \,[^{\circ}/s]$', '$\bar{V}_{\mathrm{s}}(\bar{x})$')
 legend('Location', 'SouthEast')
 hold off;
 
