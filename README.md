@@ -3,6 +3,7 @@ This repository contains the research code accompanying the paper *Sum-of-Square
 # Requirements
 - [Matlab](https://de.mathworks.com/products/matlab.html)
 - [Matlab Symbolic Math Toolbox](https://de.mathworks.com/products/symbolic.html)
+- [Matlab Aerospace Toolbox (to run Example 1)](https://de.mathworks.com/products/aerospace-toolbox.html)
 - [Git](https://git-scm.com/)
 - [CasADi 3.6 or newer](https://web.casadi.org/get/)
 - [Mosek 11 (older versions could work aswell)](https://docs.mosek.com/11.0/install/installation.html)
